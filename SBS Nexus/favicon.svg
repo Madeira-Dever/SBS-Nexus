@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"></stop>
+      <stop offset="100%" stop-color="#0f172a"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"></rect>
+
+  <!-- Escudo -->
+  <path d="M32 8L50 15V29C50 41 42.5 50 32 56C21.5 50 14 41 14 29V15L32 8Z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"></path>
+
+  <!-- Letra N -->
+  <path d="M24 40V24L40 40V24" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <!-- Pequeno detalhe tecnológico -->
+  <circle cx="32" cy="17" r="2" fill="#60a5fa"></circle>
+</svg>

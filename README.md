@@ -24,7 +24,7 @@ Created as a banking simulator, it includes the most basic banking features, suc
 git clone https://github.com/Madeira/SBS-Nexus.git
 
 2. Download the project and open:  
-Game-Dex/Main/login/login.html
+SBS Nexus/index.html
 
 ## 📁 Project Structure
 The project files are organized as follows:

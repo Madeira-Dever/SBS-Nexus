@@ -20,10 +20,10 @@ Criado para ser um simulador de banco, possuindo as funcionalidades mais básica
 
 ## 🚀 How to Run
 1. Clone the repository:  
-git clone https://github.com/Madeira/SBS Nexus.git
+git clone https://github.com/Madeira/SBS-Nexus.git
 
 2. Download the project and open:  
-SBS Nexus/index.html
+SBS-Nexus/index.html
 
 ## 📁 Project Structure
 The project files are organized as follows:

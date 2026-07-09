@@ -1,0 +1,294 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #07111f;
+  color: #fff;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  padding: 25px;
+  background: #07111f;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainContainer .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, #102b46, #0b1c31);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mainContainer .brand h1 {
+  color: #00d69f;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.mainContainer .brand span {
+  color: #91a9c5;
+  font-size: 13px;
+}
+
+.mainContainer .userPanel {
+  display: flex;
+  gap: 30px;
+}
+
+.mainContainer .userInfo,
+.mainContainer .accountInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mainContainer .userInfo span,
+.mainContainer .accountInfo span {
+  color: #8ca7c5;
+  font-size: 12px;
+}
+
+.mainContainer .clientName,
+.mainContainer .accountNumber {
+  font-size: 16px;
+}
+
+.mainContainer .logout {
+  border: none;
+  background: #c0392b;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.mainContainer .logout:hover {
+  background: #e74c3c;
+  transform: translateY(-2px);
+}
+
+.mainContainer .content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.mainContainer .sideMenu {
+  width: 230px;
+  flex-shrink: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #0b1b2d;
+  border-radius: 18px;
+}
+
+.mainContainer .menuButton {
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  background: #132b45;
+  color: #d7e6f7;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.mainContainer .menuButton:hover,
+.mainContainer .menuButton.active {
+  background: linear-gradient(135deg, #00c896, #009b75);
+  color: white;
+  transform: translateX(5px);
+}
+
+.mainContainer .dashboard {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainContainer .balanceCard {
+  padding: 25px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #12365a, #0b223b);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mainContainer .balanceCard span {
+  color: #aac2dd;
+}
+
+.mainContainer .balanceValue {
+  margin-top: 10px;
+  font-size: 38px;
+  color: #00d69f;
+}
+
+.mainContainer .balanceCard small {
+  color: #8198b2;
+}
+
+.mainContainer .operationPanel {
+  flex: 1;
+  min-height: 0;
+  padding: 30px;
+  background: #091726;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.mainContainer .welcomeScreen {
+  display: block;
+  text-align: center;
+}
+
+.mainContainer .welcomeScreen h2 {
+  color: #00d69f;
+  margin-bottom: 10px;
+}
+
+.mainContainer .welcomeScreen p {
+  color: #9eb4cc;
+}
+
+.mainContainer .depositBox,
+.mainContainer .withdrawBox,
+.mainContainer .transferBox,
+.mainContainer .operationBox {
+  display: none;
+  width: min(420px, 100%);
+  max-height: fit-content;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px;
+  background: #10263d;
+  border-radius: 18px;
+  overflow-y: none;
+  margin: 50px;
+}
+
+.mainContainer .activeOperation {
+  display: flex;
+}
+
+.mainContainer h2 {
+  color: #00d69f;
+}
+
+.mainContainer label {
+  color: #b8cee6;
+  font-size: 14px;
+}
+
+.mainContainer input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #071523;
+  color: white;
+  font-size: 16px;
+  margin: 10px 0px;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+.mainContainer input:focus {
+  border: 1px solid #00d69f;
+  box-shadow: 0 0 10px rgba(0, 214, 159, 0.3);
+}
+
+.mainContainer button {
+  transition: 0.3s;
+}
+
+.mainContainer .depositConfirm,
+.mainContainer .withdrawConfirm,
+.mainContainer .transferConfirm {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 12px;
+  background: #00c896;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mainContainer .depositConfirm:hover,
+.mainContainer .withdrawConfirm:hover,
+.mainContainer .transferConfirm:hover {
+  background: #00a878;
+}
+
+.mainContainer .transactionList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mainContainer .transactionList li {
+  background: #091726;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #b7cce3;
+}
+
+.mainContainer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #081522;
+  border-radius: 15px;
+  color: #8da5bf;
+  font-size: 20px;
+}
+
+.mainContainer .security {
+  color: #00d69f;
+  position: sticky;
+}
+
+.mainContainer .security span {
+  color: #9eb4cc;
+}
+
+.mainContainer .systemMessage {
+  position: absolute;
+  left: 50%;
+}
+
+.mainContainer .time {
+  color: #00d69f;
+}
